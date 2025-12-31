@@ -36,14 +36,13 @@ const Index = () => {
       <div className="relative z-10 w-full max-w-md space-y-8 animate-slide-up">
         {/* Logo */}
         <div className="text-center space-y-4">
-          <div className="flex justify-center gap-2 text-5xl animate-float">
-            <span>🎉</span>
-            <span className="animate-wiggle">🎭</span>
-            <span>🎊</span>
+          <div className="flex justify-center mb-4">
+            <img 
+              src="/logo.png" 
+              alt="Who Did It" 
+              className="max-w-full h-auto max-h-64 object-contain animate-bounce-in"
+            />
           </div>
-          <h1 className="text-4xl md:text-5xl font-black text-gradient-hero leading-tight">
-            КТО ЭТО<br/>СДЕЛАЛ?
-          </h1>
           <p className="text-muted-foreground text-lg">
             Угадай, кто написал ответ! 🕵️
           </p>
