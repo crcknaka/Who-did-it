@@ -43,45 +43,48 @@ const Index = () => {
               className="max-w-full h-auto max-h-64 object-contain animate-bounce-in"
             />
           </div>
-          <p className="text-muted-foreground text-lg">
-           🕵️Новогодняя игра, где виноват кто-то из вас — вопрос лишь кто именно.<br></br><br></br>
+          <p className="text-muted-foreground text-m">
+           🕵️Кто из Вас это сделал ?<br></br><br></br>
 
 Паша скажет, что был в море,<br></br>
-Игорь — что это бус сам,<br></br>
+Игорь - что это бус сам,<br></br>
 Оля будет защищать яйцо дракона,<br></br>
 Артём пошутит… но не смешно,<br></br>
 Алина просто ела курочку,<br></br>
 Андрей не виноват - просто он крупный - его легче заметить<br></br>
 Илья всё это придумал,<br></br>
-А Сфера… он вообще ещё не спит?<br></br><br></br>
-
-Смех, обвинения и разрушенные алиби гарантированы ( если игра будет работать вообше )🥂😄 <br></br>
-И да — кто-то точно это сделал.
+А Сфера… он вообще ещё не спит?
           </p>
         </div>
 
         {/* Home Mode */}
         {mode === 'home' && (
-          <div className="space-y-4 animate-bounce-in">
-            <Button
-              variant="gold"
-              size="xl"
-              className="w-full"
-              onClick={() => setMode('create')}
-            >
-              <PartyPopper className="w-6 h-6" />
-              Создать игру
-            </Button>
-            <Button
-              variant="pink"
-              size="xl"
-              className="w-full"
-              onClick={() => setMode('join')}
-            >
-              <Users className="w-6 h-6" />
-              Присоединиться
-            </Button>
-          </div>
+          <>
+            <div className="space-y-4 animate-bounce-in">
+              <Button
+                variant="gold"
+                size="xl"
+                className="w-full"
+                onClick={() => setMode('create')}
+              >
+                <PartyPopper className="w-6 h-6" />
+                Создать игру
+              </Button>
+              <Button
+                variant="pink"
+                size="xl"
+                className="w-full"
+                onClick={() => setMode('join')}
+              >
+                <Users className="w-6 h-6" />
+                Присоединиться
+              </Button>
+            </div>
+            <p className="text-muted-foreground text-sm text-center">
+              Смех, обвинения и разрушенные алиби гарантированы ( если игра будет работать вообше )🥂😄 <br></br>
+              И да — кто-то точно это сделал.
+            </p>
+          </>
         )}
 
         {/* Create Mode */}
