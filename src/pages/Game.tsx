@@ -152,10 +152,10 @@ const Game = () => {
             {!hasAnswered ? (
               <div className="space-y-4 animate-slide-up">
                 <p className="text-center text-muted-foreground">
-                  Напиши имя друга (анонимно!) 🤫
+                  Напиши свой ответ (анонимно!) 🤫
                 </p>
                 <Input
-                  placeholder="Имя игрока..."
+                  placeholder="Ваш ответ..."
                   value={answer}
                   onChange={(e) => setAnswer(e.target.value)}
                   className="text-center text-xl h-16 rounded-xl border-2 border-primary/30 focus:border-primary"
